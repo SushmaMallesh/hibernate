@@ -35,7 +35,10 @@ public class MobileEntity {
 	@Column(name = "OS_TYPE")
 	private String osType;
 	
-
+     public MobileEntity() {
+		System.out.println("default constructor is invoked");
+	}
+	
 	public int getMobileID() {
 		return mobileID;
 	}
@@ -101,6 +104,7 @@ public class MobileEntity {
 		
 	}
 
+	
 	public MobileEntity(int mobileID, String mobileBrand, double mobilePrice, String rom, String color, int cameraSize,
 			boolean isFingerPrintSupported, String osType) {
 		super();
