@@ -60,6 +60,7 @@ public class MobileDAOImpl implements MobileDAO {
 		SessionFactory sf = null;
 		Session session = null;
 
+		
 		try {
 			//step 1 starting bootstrap the hibernate framework
 			Configuration configure = new Configuration();
